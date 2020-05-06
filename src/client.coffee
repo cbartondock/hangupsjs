@@ -499,6 +499,9 @@ module.exports = class Client extends EventEmitter
             max_results
         ]
 
+    # Get all contacts.
+    allcontacts: (email) ->
+      @peoplereq.req(email).then (body) -> console.log body
 
     # Return information about a list of chat_ids
     getentitybyid: (chat_ids) ->
