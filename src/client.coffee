@@ -135,6 +135,7 @@ module.exports = class Client extends EventEmitter
         @channel = new Channel @jarstore, @opts.proxy
         @init = new Init @opts.proxy
         @chatreq = new ChatReq @jarstore, @init, @channel, @opts.proxy
+        @peoplereq = new PeopleReq @jarstore, @init, @channel, @opts.proxy
 
 
     # clears entire auth state, removing cached cookies and refresh
@@ -620,6 +621,7 @@ aliases = [
     'getConversation',
     'syncRecentConversations',
     'searchEntities',
+    'allContacts',
     'getEntityById',
     'sendEasteregg',
     'uploadImage'
