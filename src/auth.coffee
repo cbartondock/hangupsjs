@@ -11,7 +11,7 @@ fs       = require 'fs'
 # https://security.google.com/settings/security/permissions
 OAUTH2_CLIENT_ID     = '936475272427.apps.googleusercontent.com'
 OAUTH2_CLIENT_SECRET = 'KWsJlkaMn1jGLxQpWxMnOox-'
-OAUTH2_SCOPE         = 'https://www.google.com/accounts/OAuthLogin__my_sep__https://www.googleapis.com/auth/userinfo.email'
+OAUTH2_SCOPE         = 'https://www.google.com/accounts/OAuthLogin__my_sep__https://www.googleapis.com/auth/userinfo.email__my_sep__https://www.googleapis.com/auth/contacts.readonly'
 OAUTH2_DELEGATED     = '183697946088-m3jnlsqshjhh5lbvg05k46q1k4qqtrgn.apps.googleusercontent.com'
 
 OAUTH2_PARAMS =
